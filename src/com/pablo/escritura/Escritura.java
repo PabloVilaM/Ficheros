@@ -19,7 +19,7 @@ public class Escritura {
     
     public void escribirNumeros(String nomeFicheiro){
         try {
-            fich = new FileWriter(nomeFicheiro, false); //True para engadir, false ou nada para escribir
+            fich = new FileWriter(nomeFicheiro, false); //True para engadir, false ou nada para sobreescribir
             escribir = new PrintWriter(fich);
             escribir.println(1);
             escribir.println(2);
